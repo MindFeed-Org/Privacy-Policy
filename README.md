@@ -26,25 +26,23 @@ This repository includes an automated GitHub Actions workflow in [`.github/workf
 
 Every time you push changes to the `main` (or `master`) branch, GitHub Actions automatically builds and publishes the website to GitHub Pages without any manual steps.
 
-### Step 1: Create a GitHub Repository & Push
+### Step 1: Push to GitHub Remote
 
-If you haven't linked this local repository to GitHub yet:
+The remote repository has been configured to:
+`https://github.com/MindFeed-Org/Privacy-Policy.git`
 
+To push your latest changes:
 ```bash
 cd /media/windows/workspace/My_Apps/Mind_Feed/privacy-policy
-
-# Add your remote GitHub repository URL
-git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-
-# Push to main
 git push -u origin main
 ```
 
 ### Step 2: Enable GitHub Pages with Actions
 
-1. In your GitHub repository, open **Settings → Pages**.
+1. In your GitHub repository at [https://github.com/MindFeed-Org/Privacy-Policy](https://github.com/MindFeed-Org/Privacy-Policy), open **Settings → Pages**.
 2. Under **Build and deployment → Source**, select **GitHub Actions**.
-3. That's it! Every future `git push` will trigger the workflow automatically and deploy your latest changes in seconds.
+3. That's it! Every `git push` triggers the workflow in `.github/workflows/deploy.yml` and publishes to:
+   `https://mindfeed-org.github.io/Privacy-Policy/`
 
 ---
 
