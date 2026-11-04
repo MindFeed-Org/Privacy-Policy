@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editorial Ethics & Privacy Policy · MindFeed</title>
+  <meta name="description" content="MindFeed's Editorial Ethics and Privacy Charter. Independent, reader-supported journalism with zero ad-trackers, secure credentials, and local storage sovereignty.">
+  
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Editorial Ethics & Privacy Policy · MindFeed">
+  <meta property="og:description" content="Zero ad-trackers, secure credentials, and complete on-device reading sovereignty.">
+  <meta property="og:image" content="assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Typography: Newsreader (Editorial Serif) & Plus Jakarta Sans (Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="readingProgress" class="reading-progress-bar" aria-hidden="true"></div>
+
+  <!-- Top Announcement Bar / Masthead Kicker -->
+  <header class="masthead-top">
+    <div class="top-container">
+      <div class="edition-stamp">
+        <img src="assets/logo.png" alt="" width="22" height="22" class="top-nav-logo">
+        <span class="top-nav-brand">MindFeed</span>
+        <span class="stamp-sep">·</span>
+        <span class="pulse-dot"></span>
+        <span class="stamp-text">VERIFIED CHARTER</span>
+      </div>
+      <div class="masthead-controls">
+        <span id="currentDate" class="date-stamp">November 2026</span>
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Night Edition" title="Toggle Night Edition">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span class="theme-label">Warm Paper</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="brand-crest">
+        <img src="assets/logo.png" alt="MindFeed Logo" width="60" height="60" class="hero-logo">
+        <span class="hero-app-name">MindFeed</span>
+      </div>
+      <div class="hero-header-text">
+        <span class="hero-kicker">GOVERNANCE & READER CHARTER</span>
+        <h1 class="hero-title">Editorial Ethics & Privacy Policy</h1>
+        <p class="hero-subhead">
+          Crafted for thoughtful, uninterrupted reading with a zero-tracker guarantee and on-device data sovereignty.
+        </p>
+      </div>
+
+      <!-- Quick Trust Badges -->
+      <div class="trust-grid">
+        <div class="trust-pill mint">
+          <span class="trust-icon">🛡️</span>
+          <div class="trust-info">
+            <strong>Zero Ad-Trackers</strong>
+            <span>Never logged or auctioned</span>
+          </div>
+        </div>
+        <div class="trust-pill butter">
+          <span class="trust-icon">🔐</span>
+          <div class="trust-info">
+            <strong>Secure Credentials</strong>
+            <span>Encrypted accounts</span>
+          </div>
+        </div>
+        <div class="trust-pill sand">
+          <span class="trust-icon">📱</span>
+          <div class="trust-info">
+            <strong>Device Sovereignty</strong>
+            <span>Wipeable local cache</span>
+          </div>
+        </div>
+        <div class="trust-pill blush">
+          <span class="trust-icon">✍️</span>
+          <div class="trust-info">
+            <strong>Author Ownership</strong>
+            <span>Original copyright retained</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Quick Jump Bar -->
+  <nav class="mobile-nav" aria-label="Mobile table of contents">
+    <div class="mobile-nav-scroll">
+      <a href="#author-rights" class="mobile-pill active">Author Rights</a>
+      <a href="#community-safety" class="mobile-pill">Community</a>
+      <a href="#zero-tracker" class="mobile-pill">Zero Trackers</a>
+      <a href="#data-collected" class="mobile-pill">Data We Store</a>
+      <a href="#device-sovereignty" class="mobile-pill">Local Storage</a>
+      <a href="#account-deletion" class="mobile-pill">Deletion</a>
+      <a href="#contact" class="mobile-pill">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Main Content Layout -->
+  <main class="page-body">
+    <div class="main-layout">
+      <!-- Sticky Sidebar (Desktop & Tablet) -->
+      <aside class="sidebar-wrapper" aria-label="Table of contents">
+        <div class="sidebar-sticky">
+          <div class="toc-card">
+            <div class="toc-header">
+              <span class="toc-bullet"></span>
+              <span class="toc-title">ON THIS EDITION</span>
+            </div>
+            <ul class="toc-list" id="tocList">
+              <li><a href="#author-rights" class="toc-link active"><span class="toc-num">01</span> Author Rights & Copyright</a></li>
+              <li><a href="#community-safety" class="toc-link"><span class="toc-num">02</span> Constructive Discourse</a></li>
+              <li><a href="#zero-tracker" class="toc-link"><span class="toc-num">03</span> Zero-Tracker Guarantee</a></li>
+              <li><a href="#data-collected" class="toc-link"><span class="toc-num">04</span> Necessary Data Collected</a></li>
+              <li><a href="#device-sovereignty" class="toc-link"><span class="toc-num">05</span> Device Storage & Cache</a></li>
+              <li><a href="#account-deletion" class="toc-link"><span class="toc-num">06</span> Account & Data Deletion</a></li>
+              <li><a href="#contact" class="toc-link"><span class="toc-num">07</span> Inquiries & Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="app-badge-card">
+            <span class="badge-title">MINDFEED APP</span>
+            <p class="badge-copy">Experience pure, serene reading on your mobile device.</p>
+            <div class="badge-tag">Offline Capable · Zero Ads</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Document Content Stream -->
+      <article class="article-content">
+        <!-- Preamble Callout -->
+        <div class="editorial-callout reveal">
+          <div class="callout-decor">✦</div>
+          <div class="callout-body">
+            <h2 class="callout-heading">Our Core Commitment</h2>
+            <p class="callout-text">
+              MindFeed was built on a simple premise: reading should be peaceful, enriching, and free from algorithmic exploitation. We believe your thoughts and reading habits belong solely to you. This charter outlines our promises to writers, readers, and thinkers worldwide.
+            </p>
+          </div>
+        </div>
+
+        <!-- Section 1: Author Rights -->
+        <section id="author-rights" class="content-section reveal">
+          <div class="section-label-row">
+            <span class="section-tag mint">PART 1 · EDITORIAL CHARTER</span>
+            <span class="section-index">SECTION 01</span>
+          </div>
+          <h2 class="section-title">Author Sovereignty & Intellectual Property</h2>
+          <p class="lead-text">
+            Authors are the lifeblood of MindFeed. We operate under a strict creator-first policy designed to respect and protect the creative work of our contributors.
+          </p>
+          <div class="policy-card">
+            <div class="card-point">
+              <div class="point-icon">✒️</div>
+              <div class="point-content">
+                <h3>Creators Retain 100% of Their Copyright</h3>
+                <p>When you publish on MindFeed, you retain complete intellectual property rights to your writings, essays, and stories. We claim no ownership over your work.</p>
+              </div>
+            </div>
+            <div class="card-point">
+              <div class="point-icon">📜</div>
+              <div class="point-content">
+                <h3>Non-Exclusive Publishing License</h3>
+                <p>By publishing on MindFeed, you grant us only a non-exclusive license to format, syndicate, and display your article within our reader application. You are always free to republish, archive, or distribute your content anywhere else.</p>
+              </div>
+            </div>
+            <div class="card-point">
+              <div class="point-icon">🛡️</div>
+              <div class="point-content">
+                <h3>Original Byline Protection</h3>
+                <p>Author names, bios, and attribution are preserved across all reading views, archives, and search results. Bylines are never stripped or modified.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Community Safety -->
+        <section id="community-safety" class="content-section reveal">
+          <div class="section-label-row">
+            <span class="section-tag sand">PART 1 · EDITORIAL CHARTER</span>
+            <span class="section-index">SECTION 02</span>
+          </div>
+          <h2 class="section-title">Constructive Discourse & Community Standards</h2>
+          <p>
+            MindFeed is designed as a sanctuary for intellectual growth and quiet reflection. To preserve this sanctuary for all readers, we uphold clear community standards:
+          </p>
+          <ul class="standards-list">
+            <li>
+              <strong>No Hate Speech:</strong> Content that threatens, demeans, or incites violence against individuals or groups is strictly prohibited and removed immediately.
+            </li>
+            <li>
+              <strong>No Defamatory or Unlawful Material:</strong> We do not host fraudulent claims, copyright violations, or malicious disinformation.
+            </li>
+            <li>
+              <strong>Spam & Manipulation Free:</strong> Commercial link stuffing, automated bot submissions, and artificial rating manipulation will result in immediate suspension.
+            </li>
+          </ul>
+        </section>
+
+        <div class="section-separator" aria-hidden="true">
+          <span>§ § §</span>
+        </div>
+
+        <!-- Section 3: Zero Tracker Guarantee -->
+        <section id="zero-tracker" class="content-section reveal">
+          <div class="section-label-row">
+            <span class="section-tag butter">PART 2 · PRIVACY CHARTER</span>
+            <span class="section-index">SECTION 03</span>
+          </div>
+          <h2 class="section-title">The Zero-Tracker Guarantee</h2>
+          <p class="lead-text">
+            MindFeed does not participate in the digital advertising industry. We have deliberately omitted commercial tracking mechanisms.
+          </p>
+          <div class="highlight-banner">
+            <div class="banner-badge">ABSOLUTE PROMISE</div>
+            <p class="banner-statement">
+              "We do not sell, rent, or auction your reading history or personal data to data brokers, ad networks, or marketing exchanges. Period."
+            </p>
+          </div>
+          <div class="details-grid">
+            <div class="detail-box">
+              <span class="detail-title">No Third-Party Ad Networks</span>
+              <p>We do not bundle ad networks, trackers, or behavioral pixels. Your device connects only to essential application services.</p>
+            </div>
+            <div class="detail-box">
+              <span class="detail-title">No Behavioral Profiling</span>
+              <p>We do not construct interest graphs, psychological dossiers, or predictive advertising models based on what you read.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Data Collected -->
+        <section id="data-collected" class="content-section reveal">
+          <div class="section-label-row">
+            <span class="section-tag mint">PART 2 · PRIVACY CHARTER</span>
+            <span class="section-index">SECTION 04</span>
+          </div>
+          <h2 class="section-title">Necessary Data We Store & Protect</h2>
+          <p>
+            In order to provide our reader features, authentication, and authoring tools, we process only the bare minimum of information required:
+          </p>
+          
+          <div class="data-table-wrapper">
+            <table class="editorial-table">
+              <thead>
+                <tr>
+                  <th scope="col">Information</th>
+                  <th scope="col">Purpose</th>
+                  <th scope="col">Protection Level</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Account Credentials</strong> (Email & Password)</td>
+                  <td>To authenticate your account securely across sessions and allow password recovery.</td>
+                  <td><span class="table-badge secure">Strong Encryption</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Author Profile & Stories</strong></td>
+                  <td>Displaying your authored articles, draft manuscripts, and author biography.</td>
+                  <td><span class="table-badge reader">Controlled by You</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Bookmarks & Stars</strong></td>
+                  <td>Syncing articles you choose to save or highlight to your account library.</td>
+                  <td><span class="table-badge private">Private to Account</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Device Preferences</strong></td>
+                  <td>Typography scale (Compact/Editorial/Large) and reading theme (Warm Paper/Dark).</td>
+                  <td><span class="table-badge local">On-Device Only</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-footnote">
+            * We never collect precise GPS background location, contact address books, or microphone/camera data.
+          </p>
+        </section>
+
+        <!-- Section 5: Device Sovereignty -->
+        <section id="device-sovereignty" class="content-section reveal">
+          <div class="section-label-row">
+            <span class="section-tag sand">PART 2 · PRIVACY CHARTER</span>
+            <span class="section-index">SECTION 05</span>
+          </div>
+          <h2 class="section-title">On-Device Storage & Local Sovereignty</h2>
+          <p class="lead-text">
+            Your personal device is your reading sanctuary. When you download stories for offline reading, they remain strictly under your control.
+          </p>
+          <div class="feature-card">
+            <div class="feature-header">
+              <span class="feature-icon">📁</span>
+              <h3>Instant Cache Erasure</h3>
+            </div>
+            <p>
+              MindFeed provides a dedicated <strong>"Offline Reading Archive"</strong> control directly in your app Settings. At any time, you can tap <strong>"Clear Cache"</strong> to permanently purge all offline downloaded articles and temporary files stored on your phone storage.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 6: Account Deletion -->
+        <section id="account-deletion" class="content-section reveal">
+          <div class="section-label-row">
+            <span class="section-tag blush">PART 2 · PRIVACY CHARTER</span>
+            <span class="section-index">SECTION 06</span>
+          </div>
+          <h2 class="section-title">Account & Data Deletion Rights</h2>
+          <p>
+            You are always in control of your relationship with MindFeed. We respect your fundamental digital rights:
+          </p>
+          <div class="rights-cards">
+            <div class="right-box">
+              <span class="right-num">A</span>
+              <h4>Right to Access & Edit</h4>
+              <p>You may view, edit, or update your profile information, password, and published content directly within the application at any time.</p>
+            </div>
+            <div class="right-box">
+              <span class="right-num">B</span>
+              <h4>Right to Full Deletion</h4>
+              <p>You have the right to request the complete deletion of your account, authored stories, and any personal information linked to your email address.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 7: Contact -->
+        <section id="contact" class="content-section reveal">
+          <div class="section-label-row">
+            <span class="section-tag mint">SUPPORT & INQUIRIES</span>
+            <span class="section-index">SECTION 07</span>
+          </div>
+          <h2 class="section-title">Editorial & Privacy Inquiries</h2>
+          <p>
+            If you have questions regarding this charter, author copyright, or wish to submit a data deletion request, our editorial team is available to assist you.
+          </p>
+          <div class="contact-box">
+            <div class="contact-item">
+              <span class="contact-label">Support & Inquiries Email:</span>
+              <a href="mailto:mindfeed.support@gmail.com" class="contact-link">mindfeed.support@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Direct Message:</span>
+              <a href="mailto:mindfeed.support@gmail.com?subject=MindFeed%20Support%20%26%20Privacy%20Inquiry" class="contact-button">
+                <span>✉️ Email Us Directly</span>
+              </a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Application:</span>
+              <span>MindFeed · Thoughtful Editorial Reading</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Effective Date:</span>
+              <span>November 2026 Edition</span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Elegant Newspaper Footer -->
+  <footer class="masthead-footer">
+    <div class="footer-container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="MindFeed Crest" width="42" height="42" class="footer-logo">
+          <div>
+            <span class="footer-title">MINDFEED</span>
+            <span class="footer-tagline">Built for thoughtful and uninterrupted reading</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#author-rights">Author Rights</a>
+          <span class="sep">·</span>
+          <a href="#zero-tracker">Zero-Trackers</a>
+          <span class="sep">·</span>
+          <a href="#account-deletion">Data Rights</a>
+          <span class="sep">·</span>
+          <a href="mailto:mindfeed.support@gmail.com">Contact Support</a>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <p class="copyright">
+          © 2026 MindFeed. All rights reserved. Content published by independent authors remains their sole intellectual property.
+        </p>
+        <div class="footer-stamp">
+          EDITION 2026 · VERIFIED CHARTER
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
