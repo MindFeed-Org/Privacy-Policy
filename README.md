@@ -18,47 +18,6 @@ A responsive, high-performance static website designed for **GitHub Pages** that
   - **Smartphones**: Clean single-column view with a thumb-friendly horizontal quick-jump pill bar.
 - **Zero Heavy Dependencies**: Pure semantic HTML5, modern CSS3, and vanilla JavaScript (no npm, frameworks, or bundlers needed).
 
----
-
-## ⚡ Automated CI/CD GitHub Workflow
-
-This repository includes an automated GitHub Actions workflow in [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
-
-Every time you push changes to the `main` (or `master`) branch, GitHub Actions automatically builds and publishes the website to GitHub Pages without any manual steps.
-
-### Step 1: Push to GitHub Remote
-
-The remote repository has been configured to:
-`https://github.com/MindFeed-Org/Privacy-Policy.git`
-
-To push your latest changes:
-```bash
-cd /media/windows/workspace/My_Apps/Mind_Feed/privacy-policy
-git push -u origin main
-```
-
-### Step 2: Enable GitHub Pages with Actions
-
-1. In your GitHub repository at [https://github.com/MindFeed-Org/Privacy-Policy](https://github.com/MindFeed-Org/Privacy-Policy), open **Settings → Pages**.
-2. Under **Build and deployment → Source**, select **GitHub Actions**.
-3. That's it! Every `git push` triggers the workflow in `.github/workflows/deploy.yml` and publishes to:
-   `https://mindfeed-org.github.io/Privacy-Policy/`
-
----
-
-## 💻 Local Preview
-
-To preview the website locally on your computer:
-
-```bash
-cd /media/windows/workspace/My_Apps/Mind_Feed/privacy-policy
-python3 -m http.server 8080
-```
-
-Then open your browser at [http://localhost:8080](http://localhost:8080).
-
----
-
 ## ✉️ Support Contact
 
 For inquiries regarding the editorial charter, privacy policy, or data deletion:
